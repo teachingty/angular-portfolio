@@ -1,0 +1,29 @@
+.app-header{
+  background-color: black;
+  color: white;
+  /* display: flex; */
+  /* min-height: 5vh; */
+  align-items: center;
+  /* width: 100%; */
+  /* position: fixed; */
+}
+
+#Logo{
+  font-size: 5vh;
+  margin-right: 50px;
+}
+
+/* .group-tab{
+  height: 5vh;
+} */
+
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper{
+  /* margin-topだとヘッダーも下がる */
+  padding-top: 8vh;
+  min-height: 100vh;
+}
