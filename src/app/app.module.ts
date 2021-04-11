@@ -11,14 +11,16 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from "@angular/forms";
-import { ModalLoginContentDialog } from './login-content-dialog';
+import { NgdialogviewComponent } from './ngdialogview/ngdialogview.component';
+import { NgdialogpageComponent } from './ngdialogpage/ngdialogpage.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ModalLoginContentDialog
+    NgdialogviewComponent,
+    NgdialogpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,11 +31,9 @@ import { ModalLoginContentDialog } from './login-content-dialog';
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    
-    // LoginContentDialog
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents:[ModalLoginContentDialog]
+  entryComponents:[NgdialogviewComponent]
 })
 export class AppModule { }
