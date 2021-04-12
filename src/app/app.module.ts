@@ -11,8 +11,8 @@ import { FormsModule } from "@angular/forms";
 
 import { MaterialModule } from './material.module';
 
-import { NgdialogviewComponent } from './shared/components/ngdialogview/ngdialogview.component';
-import { NgdialogpageComponent } from './shared/components/ngdialogpage/ngdialogpage.component';
+// import { NgdialogviewComponent } from './shared/components/ngdialogview/ngdialogview.component';
+// import { NgdialogpageComponent } from './shared/components/ngdialogpage/ngdialogpage.component';
 import { SharedModule } from './shared/shared.module';
 
 
@@ -20,8 +20,8 @@ import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NgdialogviewComponent,
-    NgdialogpageComponent,
+    // NgdialogviewComponent,
+    // NgdialogpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +35,6 @@ import { SharedModule } from './shared/shared.module';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents:[NgdialogviewComponent]
+  // entryComponents:[NgdialogviewComponent]
 })
 export class AppModule { }
