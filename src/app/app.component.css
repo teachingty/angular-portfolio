@@ -1,5 +1,5 @@
 /* margin-topだとヘッダーも下がる */
 .wrapper{
-  padding-top: 8vh;
+  /* padding-top: 8vh; */
   min-height: 100vh;
 }

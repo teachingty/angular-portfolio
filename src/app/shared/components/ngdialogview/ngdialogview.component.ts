@@ -1,16 +1,17 @@
-import { Component, OnInit, Inject } from "@angular/core";
-// import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material";
+import { Component, OnInit} from "@angular/core";
+import {MatDialogRef} from '@angular/material/dialog';
+// import { MAT_DIALOG_DATA} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-ngdialogview',
   templateUrl: './ngdialogview.component.html',
   styleUrls: ['./ngdialogview.component.scss']
 })
-export class NgdialogviewComponent implements OnInit {
+export class NgdialogviewComponent {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<NgdialogviewComponent>) { }
 
-  ngOnInit(): void {
+  onNoClick(): void {
+    this.dialogRef.close();
   }
-
 }

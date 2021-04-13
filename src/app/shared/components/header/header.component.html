@@ -1,14 +1,11 @@
-<section class="app-header" fxLayout="row" fxLayoutAlign="space-around" none>
-  <a id="Logo" routerLink="" fxFlex="40%">APPLICATION</a>
-  <div fxFlex="30%">
-    <a routerLink="" class="menu" fxFlex="20%">ホーム</a>
-    <a routerLink="/about" class="menu" fxFlex="20%">使い方</a>
+<section class="app-header">
+  <a id="Logo" routerLink="">APPLICATION</a>
+  <div>
+    <a routerLink="">ホーム</a>
+    <a routerLink="/about">使い方</a>
   </div>
-  <div class="basic-button" fxflex="30%" fxFlexAlign="center" fxLayoutAlign="space-around" >
-    <mat-form-field>
-      <input matInput placeholder="test-input" type="text">
-      <button mat-button (click)="openDialog()">ログイン</button>
-      <button mat-button>新規登録</button>
-    </mat-form-field>
+  <div class="basic-button">
+    <button mat-button (click)="openDialog()">ログイン</button>
+    <button mat-button>新規登録</button>
   </div>
 </section>

@@ -1,14 +1,10 @@
+<button class="close" mat-button (click)="onNoClick()">X</button>
 <h2 mat-dialog-title>ログイン</h2>
-<mat-dialog-content>
-  <div mat-dialog-actions>
-    <!-- <button mat-button (click)="onNoClick()">×</button> -->
-    <button mat-button mat-dialog-close>CANCEL</button>
-    <button mat-button mat-dialog-close>OK</button>
-  </div>
+<div mat-dialog-content>
   <input type="text" placeholder="メールアドレス">
   <input type="password" placeholder="パスワード">
   <button>ログイン</button>
-  <p>ゲストユーザーでログイン</p>
+  <a>ゲストユーザーでログイン</a>
   <p>アカウントをお持ちでないですか？</p>
-  <a>新規登録</a>
-</mat-dialog-content>
+  <a link="">新規登録</a>
+</div>
