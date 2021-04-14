@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { NgdialogviewComponent } from "../ngdialogview/ngdialogview.component";
-import { MaterialModule } from '../../../material.module';
+// import { MaterialModule } from '../../../material.module';
 
 @Component({
   selector: 'app-header',

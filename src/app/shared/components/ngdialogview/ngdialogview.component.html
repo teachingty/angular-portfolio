@@ -1,10 +1,33 @@
-<button class="close" mat-button (click)="onNoClick()">X</button>
-<h2 mat-dialog-title>ログイン</h2>
+<!-- <h2 mat-dialog-title>ログイン</h2>
 <div mat-dialog-content>
   <input type="text" placeholder="メールアドレス">
   <input type="password" placeholder="パスワード">
   <button>ログイン</button>
-  <a>ゲストユーザーでログイン</a>
+  <a href="">ゲストユーザーでログイン</a>
   <p>アカウントをお持ちでないですか？</p>
-  <a link="">新規登録</a>
-</div>
+  <a href="">新規登録</a>
+  <mat-card></mat-card>
+</div> -->
+
+<mat-card class="login-card">
+  <button class="close" mat-button (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <mat-card-header>
+    <mat-card-title class="login-title">ログイン</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="onSubmit()" class="login-form" #loginForm="ngForm">
+      <mat-form-field>
+        <input matInput type="text" placeholder="メールアドレス">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="パスワード">
+        <mat-icon matSuffix (click)="hide=!hide">{{hide?'visibility_off':'visibility'}}</mat-icon>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary" [disabled]=false>ログイン</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<!-- https://www.l08084.com/entry/2018/04/20/161935#%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%82%92%E4%BD%9C%E3%82%8B -->

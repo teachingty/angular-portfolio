@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgdialogviewComponent } from './components/ngdialogview/ngdialogview.component';
 import { NgdialogpageComponent } from './components/ngdialogpage/ngdialogpage.component';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NgdialogpageComponent } from './components/ngdialogpage/ngdialogpage.co
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   exports:[HeaderComponent,FooterComponent],
   // entryComponents:[NgdialogviewComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit} from "@angular/core";
 import {MatDialogRef} from '@angular/material/dialog';
-// import { MAT_DIALOG_DATA} from "@angular/material/dialog";
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-ngdialogview',
@@ -8,10 +8,15 @@ import {MatDialogRef} from '@angular/material/dialog';
   styleUrls: ['./ngdialogview.component.scss']
 })
 export class NgdialogviewComponent {
+  public hide = true;
 
   constructor(public dialogRef: MatDialogRef<NgdialogviewComponent>) { }
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  onSubmit() {
+    console.log(this.hide);
   }
 }
