@@ -1,4 +1,4 @@
-<section class="app-header">
+<!-- <section class="app-header">
   <a id="Logo" routerLink="">APPLICATION</a>
   <div>
     <a routerLink="">ホーム</a>
@@ -8,4 +8,21 @@
     <button mat-button (click)="openDialog()">ログイン</button>
     <button mat-button>新規登録</button>
   </div>
-</section>
+</section> -->
+
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <span class="logo">APPLICATION</span>
+    <ul class="nav">
+      <li>
+        <a routerLink="/">ホーム</a>
+      </li>
+      <li>
+        <a routerLink="/about">使い方</a>
+      </li>
+    </ul>
+    <span class="spacer"></span>
+    <button mat-button class="login" (click)="openDialog()">ログイン</button>
+    <button mat-button class="register">新規登録</button>
+  </mat-toolbar-row>
+</mat-toolbar>
