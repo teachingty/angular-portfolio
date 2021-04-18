@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import { NgdialogviewComponent } from "../ngdialogview/ngdialogview.component";
+import { NgdialogviewComponent } from "../../shared/components/ngdialogview/ngdialogview.component";
 
 @Component({
   selector: 'app-ngdialogpage',

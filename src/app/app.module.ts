@@ -10,18 +10,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from "@angular/forms";
 
 import { MaterialModule } from './material.module';
-
-// import { NgdialogviewComponent } from './shared/components/ngdialogview/ngdialogview.component';
-// import { NgdialogpageComponent } from './shared/components/ngdialogpage/ngdialogpage.component';
 import { SharedModule } from './shared/shared.module';
+
+import { IvyCarouselModule } from "angular-responsive-carousel";
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // NgdialogviewComponent,
-    // NgdialogpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +29,9 @@ import { SharedModule } from './shared/shared.module';
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    IvyCarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  // entryComponents:[NgdialogviewComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
