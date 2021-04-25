@@ -11,10 +11,7 @@ import { FormsModule } from "@angular/forms";
 
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
-
-import { IvyCarouselModule } from "angular-responsive-carousel";
-
-
+import { TopModule } from './pages/top/top.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +26,7 @@ import { IvyCarouselModule } from "angular-responsive-carousel";
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    IvyCarouselModule
+    TopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
