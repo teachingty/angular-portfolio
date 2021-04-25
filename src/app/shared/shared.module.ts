@@ -5,6 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgdialogviewComponent } from './components/ngdialogview/ngdialogview.component';
 import { FormsModule }   from '@angular/forms';
+import { RouterModule} from '@angular/router'; // for routerLink
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { FormsModule }   from '@angular/forms';
   imports: [
     CommonModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports:[HeaderComponent,FooterComponent],
   // entryComponents:[NgdialogviewComponent]
