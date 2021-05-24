@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 import { TopPageComponent } from './components/top-page/top-page.component';
 import { AboutComponent } from './components/about/about.component';
@@ -11,16 +12,17 @@ import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
-    TopPageComponent, 
+    TopPageComponent,
     AboutComponent,
   ],
   imports: [
     CommonModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    SharedModule
   ],
   exports:[
-    TopPageComponent, 
-    AboutComponent, 
+    TopPageComponent,
+    AboutComponent,
   ]
 })
 export class TopModule { }

@@ -1,0 +1,23 @@
+<a class="project-card-bar" [routerLink]="['/projects','71']">
+    <ng-container *ngTemplateOutlet="projectImage"></ng-container>
+    <ng-container *ngTemplateOutlet="panelRight"></ng-container>
+</a>
+
+<ng-template #projectImage>
+  <div
+  class="main-image-wrapper overflow-hidden"
+  [ngStyle]="{ 'background-image':photo}">
+  </div>
+</ng-template>
+
+<ng-template #panelRight>
+  <div class="panel-right w-100 h-100">
+    <div class="score">スコア</div>
+    <div class="title ellipsis-lines-2" >タイトル</div>
+    <div class="footprint w-100 h-100">
+      <span class="subtitle ellipsis-lines">サブタイトル</span>
+      <span class="line-splitter"></span>
+      <span class="datetime flex-grow-1">時間</span>
+    </div>
+  </div>
+</ng-template>

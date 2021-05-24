@@ -4,6 +4,7 @@ import { MaterialModule } from '../material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgdialogviewComponent } from './components/ngdialogview/ngdialogview.component';
+import { ProjectCardBarComponent } from './components/project-card-bar/project-card-bar.component';
 import { FormsModule }   from '@angular/forms';
 import { RouterModule} from '@angular/router'; // for routerLink
 
@@ -13,6 +14,7 @@ import { RouterModule} from '@angular/router'; // for routerLink
     HeaderComponent,
     FooterComponent,
     NgdialogviewComponent,
+    ProjectCardBarComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,11 @@ import { RouterModule} from '@angular/router'; // for routerLink
     FormsModule,
     RouterModule
   ],
-  exports:[HeaderComponent,FooterComponent],
+  exports:[
+    HeaderComponent,
+    FooterComponent,
+    ProjectCardBarComponent
+  ],
   // entryComponents:[NgdialogviewComponent]
 })
 export class SharedModule {}
