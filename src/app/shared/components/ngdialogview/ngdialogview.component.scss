@@ -12,15 +12,21 @@
 
 .login-card{
   max-width: 400px;
-}
 
-.login-form {
-  display: flex;
-  flex-direction: column;
-}
+  .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-.login-title {
-  font-weight: bold;
-  font-size: 22px;
-  color: #3f51b5;
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #3f51b5;
+  }
 }
