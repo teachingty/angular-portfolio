@@ -1,0 +1,39 @@
+<div class="page">
+  <section class="card">
+    <div class="card-header">
+      This is simple chat feature
+    </div>
+    <div class="card-body">
+      <ng-container *ngFor="let comment of comments">
+        <div class="media">
+          <div class="media-left" *ngIf="comment.user.uid!==currentUser.uid">
+            <a href="#" class="icon-rounded">{{comment.initial}}</a>
+          </div>
+          <div class="media-body">
+            <!--DatePipeを追加-->
+            <h4 class="media-heading">{{comment.user.name}} Date:{{comment.date | chatDate}}</h4>
+            <div>{{comment.content}}</div>
+          </div>
+        <div class="media-right" *ngIf="comment.user.uid===currentUser.uid">
+          <a href="#" class="icon-rounded">{{comment.initial}}</a>
+        </div>
+        </div>
+        <hr>
+      </ng-container>
+    </div>
+  </section>
+
+  <section>
+    <form class="chart-form" (submit)="addComment(content)">
+      <div class="input-group">
+        <input type="text" class="form-control"
+               [(ngModel)]="content"
+               name="comment"
+               placeholder="Comment" >
+        <div class="input-group-append">
+          <button class="btn btn-info" type="submit">SEND</button>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>

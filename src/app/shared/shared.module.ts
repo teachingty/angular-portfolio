@@ -6,7 +6,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NgdialogviewComponent } from './components/ngdialogview/ngdialogview.component';
 import { ProjectCardBarComponent } from './components/project-card-bar/project-card-bar.component';
 import { FormsModule }   from '@angular/forms';
-import { RouterModule} from '@angular/router'; // for routerLink
+import { RouterModule} from '@angular/router';
+import { ChatDatePipe } from './pipes/chat-date/chat-date.pipe';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { RouterModule} from '@angular/router'; // for routerLink
     HeaderComponent,
     FooterComponent,
     NgdialogviewComponent,
-    ProjectCardBarComponent
+    ProjectCardBarComponent,
+    ChatDatePipe
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { RouterModule} from '@angular/router'; // for routerLink
   exports:[
     HeaderComponent,
     FooterComponent,
-    ProjectCardBarComponent
+    ProjectCardBarComponent,
+    ChatDatePipe
   ],
   // entryComponents:[NgdialogviewComponent]
 })

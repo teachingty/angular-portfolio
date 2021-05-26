@@ -3,9 +3,13 @@
 /*全要素のマージン・パディングをリセット*/
 * {
 	margin:0; padding:0;
-
-
 }
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  /* background-color: rgba(255, 251, 251, 0.78); */
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
