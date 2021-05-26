@@ -7,7 +7,7 @@ import { AppComponent} from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from "@angular/forms";
+// import { FormsModule } from "@angular/forms";
 
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
@@ -21,7 +21,7 @@ import { TopModule } from './pages/top/top.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule,
+    // FormsModule,
     SharedModule,
     MaterialModule,
     FlexLayoutModule,
