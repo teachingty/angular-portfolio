@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatModel,User} from './chat'; // 追加
-import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { ChatModel,User} from './chat';
+import { AngularFirestore} from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 

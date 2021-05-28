@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
 import { TopModule } from './pages/top/top.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TopModule } from './pages/top/top.module';
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    TopModule
+    TopModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

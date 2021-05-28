@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './pages/top/components/about/about.component';
+import { AboutComponent } from './pages/about/about.component';
 import { TopPageComponent } from './pages/top/components/top-page/top-page.component';
-import { ChatComponent } from './pages/top/components/chat/chat.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 const routes: Routes = [
   {
