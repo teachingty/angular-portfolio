@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angular-portfolio-f1093"
+  },
+  "targets": {
+    "angular-portfolio-f1093": {
+      "hosting": {
+        "node": [
+          "angular-portfolio-f1093"
+        ]
+      }
+    }
+  }
+}
