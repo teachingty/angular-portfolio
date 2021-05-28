@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { TopPageComponent } from './pages/top/components/top-page/top-page.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
   },
   {
     path:"**",
-    redirectTo:""
+    component:PageNotFoundComponent
   }
 ];
 

@@ -8,16 +8,17 @@ import { AngularFireModule} from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { TopModule } from './top/top.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 import { AboutComponent } from './about/about.component';
 import { ChatComponent } from './chat/chat.component';
-
-import { SharedModule } from 'src/app/shared/shared.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
-    ChatComponent
+    ChatComponent,
+    PageNotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +32,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   exports:[
     AboutComponent,
-    ChatComponent
+    ChatComponent,
+    PageNotFoundComponent
   ],
 })
 export class PagesModule {}
