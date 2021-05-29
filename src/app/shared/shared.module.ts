@@ -16,7 +16,7 @@ import { ChatDatePipe } from './pipes/chat-date/chat-date.pipe';
     FooterComponent,
     NgdialogviewComponent,
     ProjectCardBarComponent,
-    ChatDatePipe
+    ChatDatePipe,
   ],
   imports: [
     CommonModule,
@@ -30,6 +30,6 @@ import { ChatDatePipe } from './pipes/chat-date/chat-date.pipe';
     ProjectCardBarComponent,
     ChatDatePipe
   ],
-  // entryComponents:[NgdialogviewComponent]
+  entryComponents:[NgdialogviewComponent]
 })
 export class SharedModule {}

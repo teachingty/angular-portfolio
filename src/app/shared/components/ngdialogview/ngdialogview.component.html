@@ -1,20 +1,10 @@
-<!-- <h2 mat-dialog-title>ログイン</h2>
-<div mat-dialog-content>
-  <input type="text" placeholder="メールアドレス">
-  <input type="password" placeholder="パスワード">
-  <button>ログイン</button>
-  <a href="">ゲストユーザーでログイン</a>
-  <p>アカウントをお持ちでないですか？</p>
-  <a href="">新規登録</a>
-  <mat-card></mat-card>
-</div> -->
-
 <mat-card class="login-card">
   <button class="close" mat-button (click)="onNoClick()">
     <mat-icon>close</mat-icon>
   </button>
   <mat-card-header>
-    <mat-card-title class="login-title">ログイン</mat-card-title>
+    <mat-card-title class="login-title" *ngIf="this.vs.loginFlag">ログイン</mat-card-title>
+    <mat-card-title class="login-title" *ngIf="!this.vs.loginFlag">新規登録</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <form (ngSubmit)="onSubmit()" class="login-form" #loginForm="ngForm">
@@ -25,14 +15,26 @@
         <input matInput [type]="hide ? 'password' : 'text'" placeholder="パスワード">
         <mat-icon matSuffix (click)="hide=!hide">{{hide?'visibility':'visibility_off'}}</mat-icon>
       </mat-form-field>
-      <button type="submit" mat-raised-button color="Primary" [disabled]=false>ログイン</button>
+      <mat-form-field *ngIf="!this.vs.loginFlag">
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="パスワード（確認用）">
+        <mat-icon matSuffix (click)="hide=!hide">{{hide?'visibility':'visibility_off'}}</mat-icon>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="Primary" [disabled]=false *ngIf="this.vs.loginFlag">
+        ログイン
+      </button>
+      <button type="submit" mat-raised-button color="Primary" [disabled]=false *ngIf="!this.vs.loginFlag">
+        新規登録
+      </button>
     </form>
   </mat-card-content>
-    <div class="forget-password">
+    <div class="forget-password" *ngIf="this.vs.loginFlag">
       パスワードをお忘れですか？
     </div>
-    <div class="register-navigation">
-      <a href="">新規登録</a>はこちら
+    <div class="register-navigation" *ngIf="this.vs.loginFlag">
+      <span (click)="this.vs.loginFlag=!this.vs.loginFlag">新規登録</span>はこちら
+    </div>
+    <div class="register-navigation" *ngIf="!this.vs.loginFlag">
+      <span (click)="this.vs.loginFlag=!this.vs.loginFlag">登録済み</span>の方はこちら
     </div>
 </mat-card>
 

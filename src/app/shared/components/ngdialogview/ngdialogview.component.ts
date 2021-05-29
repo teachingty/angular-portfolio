@@ -1,6 +1,9 @@
-import { Component, OnInit} from "@angular/core";
+import { Component, Input, OnInit} from "@angular/core";
 import {MatDialogRef} from '@angular/material/dialog';
 import { FormControl, Validators } from '@angular/forms';
+import { HeaderComponent } from "../header/header.component";
+import { ValueSharedService } from "../../../services/value-shared/value-shared.service";
+
 
 @Component({
   selector: 'app-ngdialogview',
@@ -8,9 +11,9 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./ngdialogview.component.scss']
 })
 export class NgdialogviewComponent {
-  public hide = true;
+  public hide:boolean = true;
 
-  constructor(public dialogRef: MatDialogRef<NgdialogviewComponent>) { }
+  constructor(public dialogRef: MatDialogRef<NgdialogviewComponent>, public vs:ValueSharedService) { }
 
   onNoClick(): void {
     this.dialogRef.close();
@@ -19,4 +22,5 @@ export class NgdialogviewComponent {
   onSubmit() {
     console.log(this.hide);
   }
+
 }
